@@ -7,20 +7,28 @@ footer {
     max-height: 100px;
     background-color: #282828;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     color: white;
+    font-size: 0.7em;
 }
 
 footer .container {
     display: flex;
     justify-content: space-between;
+    gap: 150px;
 }
 
+footer .container > section {
+    /* border: 1px dashed white; */
+}
+
+/* song info */
 #song-info {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-grow: 1;
 }
 
 #song-info img {
@@ -33,6 +41,61 @@ footer .container {
     margin-right: 1em;
 }
 
+/* player */
+#player {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2.5;
+}
+
+#player div:first-child {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.player__play-button {
+    font-size: 1.6em;
+}
+
+.player__bar {
+    background-color: #5a5a5a;
+    height: 5px;
+    border-radius: 50px;
+    flex-grow: 1;
+}
+
+.player__bar > .player__progress-bar {
+    background-color: white;
+    height: inherit;
+    border-radius: inherit;
+    width: 30%;
+}
+
+
+/* footer settings */
+#footer__settings {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.settings__volume-bar {
+    background-color: #5a5a5a;
+    height: 5px;
+    border-radius: 50px;
+    flex-grow: 1;
+}
+
+.settings__volume-bar > .settings__volume-bar_progress {
+    background-color: white;
+    height: inherit;
+    border-radius: inherit;
+    width: 30%;
+}
 
 
 
