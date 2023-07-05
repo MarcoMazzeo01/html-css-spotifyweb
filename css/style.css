@@ -1,0 +1,18 @@
+html {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+/* FOOTER */
+footer {
+    min-height: 100px;
+    background-color: #282828;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
