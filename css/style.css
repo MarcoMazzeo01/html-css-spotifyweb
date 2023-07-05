@@ -2,21 +2,66 @@ html {
     font-family: 'Montserrat', sans-serif;;
 }
 
+body {
+    background-color: #141922;
+}
+
+/* * HEADER*  */
+header {
+    min-height: 90px;
+    max-height: 90px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: inherit;
+    padding: 0 40px;
+}
+
+header img {
+    max-width: 150px;
+}
+
+header button {
+    border: 1px white solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 15px 40px;
+}
+
+
+/* * MAIN * */
+main {
+    background-color: #141922;
+}
+
 /* * FOOTER * */
 footer {
-    max-height: 100px;
+    min-height: 90px;
     background-color: #282828;
     width: 100%;
     position: fixed;
     bottom: 0;
     color: white;
     font-size: 0.7em;
+    padding: 0 10px;
 }
 
 footer .container {
+    min-height: inherit;
     display: flex;
     justify-content: space-between;
-    gap: 150px;
+    align-items: center;
 }
 
 footer .container > section {
@@ -104,6 +149,7 @@ nav {
     width: 100%;
     max-width: 250px;
     background-color: black;
-    height: calc(100vh - 100px);
-    position: absolute;
+    height: calc(100vh - 90px);
+    position: fixed;
+    z-index: 50;
 }
