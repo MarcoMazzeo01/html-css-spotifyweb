@@ -25,49 +25,65 @@
     <div class="top-content">
         <!-- * NAV BAR * -->
         <nav>
-            <!-- LOGO -->
-            <img src="./img/logo.svg" alt="logo">
-            
-
-            <!-- MAIN MENU -->
-            <div class="nav__menu">
-                <ul class="no-style">
-                    <li>
-                        <img src="./img/home.svg" alt="home">
-                        <div class="menu__query">Home</div>
-                    </li>
-                    <li>
-                        <img src="./img/search.svg" alt="search">
-                        <div class="menu__query">Cerca</div>
-                    </li>
-                    <li>
-                        <img src="./img/libreria.svg" alt="librery">
-                        <div class="menu__query">La tua libreria</div>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- PLAYLISTS -->
-            <div class="nav__playlists">
-                <h2>Playlist</h2>
-
-                <button>
-                    <div>+</div>
-                    Crea Playlist
-                </button>
-
-                <div class="nav__playlists__list">
-
-
+            <div class="container">
+                <!-- LOGO -->
+                <img class="nav__logo-big" src="./img/logo.svg" alt="logo">
+                
+                <!-- MAIN MENU -->
+                <div class="nav__menu">
                     <ul class="no-style">
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                        <li>
+                            <div class="nav__menu-query-decor"></div>
+                            <img src="./img/home.svg" alt="home">
+                            <div class="menu__query">Home</div>
+                        </li>
+                        <li>
+                            <div class="nav__menu-query-decor"></div>
+                            <img src="./img/search.svg" alt="search">
+                            <div class="menu__query">Cerca</div>
+                        </li>
+                        <li>
+                            <div class="nav__menu-query-decor"></div>
+                            <img src="./img/libreria.svg" alt="librery">
+                            <div class="menu__query">La tua libreria</div>
+                        </li>
                     </ul>
+                </div>
+
+                <!-- PLAYLISTS -->
+                <div class="nav__playlists">
+                    <h2>Playlist</h2>
+                    <button>
+                        <div>+</div>
+                        Crea Playlist
+                    </button>
+                    <div class="nav__playlists__list">
+                        <ul class="no-style">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- INSTALL & USER -->
+                <div class="nav__user-app">
+                    <div class="user-app__install">
+                        <img src="./img/download.svg" alt="download">
+                        <a href="https://apps.apple.com/it/app/spotify-musica-e-podcast/id324684580">Installa App</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="user-app__profile">
+                        <img src="./img/profile.svg" alt="user">
+                        <span>John Doe</span>
+                    </div>
                 </div>
             </div>
         </nav>
