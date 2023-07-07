@@ -1,0 +1,56 @@
+/* ! RESPONSIVE ! */
+
+
+/* ? TABLET ? */
+@media screen and (max-width: 768px) {
+
+
+
+    .songs > section > .container > .card {
+        width: calc((100% / 4) - 20px);
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* ? MOBILE ? */
+@media screen and (max-width: 576px) {
+
+    :root {
+        --nav-bar-width: 180px;
+    }
+
+    .songs > section > .container > .card {
+        width: calc((100% / 2) - 20px);
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ? EXTRA SMALL MOBILE ? */
+@media screen and (max-width: 350px) {
+    :root {
+        --nav-bar-width: 60px;
+    }
+
+    .menu__query, .nav__playlists, .nav__logo-big {
+        display: none;
+    }
+    
+    .nav__logo-small {
+        display:block;
+    }
+
+    .user-app__install img, .user-app__profile img {
+        max-width: 100%;
+    }
+
+    .user-app__install a, .user-app__profile span {
+        display: none;
+    }
+
+
+
+}
+

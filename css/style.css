@@ -1,6 +1,6 @@
 :root {
     --footer-height: 90px;
-    --nav-bar-width: 17%;
+    --nav-bar-width: 250px;
     --spotify-green: #adff2f;
     --main-text-color: #6a6a6a;
 }
@@ -141,6 +141,7 @@ header {
 /* * NAV BAR * */
 #side-bar {
     width: var(--nav-bar-width);
+    height: calc(100vh - var(--footer-height));
     height: inherit;
     background-color: black;
     position: relative;
@@ -160,6 +161,10 @@ header {
     display: block;
     width: 70%;
     height: auto;
+}
+
+.nav__logo-small {
+    display: none;
 
 }
 
@@ -252,12 +257,13 @@ header {
 
 /* playlists list */
 .nav__playlists__list {
+    height: 150px;
     overflow-y: auto;
 }
 
 .nav__playlists__list > ul li {
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* install & user */
@@ -394,23 +400,3 @@ footer .container > section {
 }
 
 
-/* ! RESPONSIVE ! */
-
-/* ? TABLET ? */
-@media screen and (max-width: 768px) {
-
-    .songs > section > .container > .card {
-        width: calc((100% / 4) - 20px);
-        flex-wrap: wrap;
-    }
-}
-
-
-/* ? MOBILE ? */
-@media screen and (max-width: 390px) {
-
-    .songs > section > .container > .card {
-        width: calc((100% / 2) - 20px);
-        flex-wrap: wrap;
-    }
-}
