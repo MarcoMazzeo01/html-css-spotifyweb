@@ -102,6 +102,42 @@ header {
     visibility: visible;
 }
 
+
+/* * SONGS * */
+.songs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.songs > section > .container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.songs > section > .container > .card {
+    width: calc((100% / 6) - 15px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card__
+
+.songs h2 {
+    font-size: 1.8em;
+}
+
+.songs .card h3, .songs .card h4{
+    text-align: center;
+}
+
+.songs h4 {
+    color: var(--main-text-color);
+}
+
 /* * NAV BAR * */
 #side-bar {
     width: var(--nav-bar-width);
