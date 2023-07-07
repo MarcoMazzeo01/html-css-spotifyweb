@@ -11,6 +11,29 @@ body {
     background-color: #141922;
 }
 
+/* * TOP CONTENT * */
+.top-content {
+    height: calc(100vh - var(--footer-height));
+    display: flex;
+}
+
+.top-content > main {
+    height: 100%;
+    background-color: #141922;
+    color: white;
+    width: calc(100% - var(--nav-bar-width));
+    overflow-y: auto;
+
+}
+
+/* * NAV BAR * */
+nav {
+    width: 15%;
+    height: inherit;
+    background-color: black;
+    position: relative;
+    z-index: 50;
+}
 
 
 /* * FOOTER * */
@@ -108,15 +131,4 @@ footer .container > section {
     height: inherit;
     border-radius: inherit;
     width: 30%;
-}
-
-
-
-/* * NAV BAR * */
-nav {
-    width: 15%;
-    height: inherit;
-    background-color: black;
-    position: fixed;
-    z-index: 50;
 }
