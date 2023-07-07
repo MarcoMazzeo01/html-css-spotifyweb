@@ -25,6 +25,12 @@
         width: calc((100% / 2) - 20px);
         flex-wrap: wrap;
     }
+
+    #song-info, #player, #footer__settings {
+        width: calc(100% / 3);
+    }
+
+    
 }
 
 
